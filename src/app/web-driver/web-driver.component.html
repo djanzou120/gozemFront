@@ -1,0 +1,44 @@
+<div>
+  <h1>Web Driver</h1>
+</div>
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Enter package Id" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-primary" type="button">Track</button>
+  </div>
+</div>
+<div class="row">
+  <div class="col-5">
+    <app-package-list
+            [title]="'Package list'"
+            [packages]="packages"
+    ></app-package-list>
+
+    <app-delivery-list
+            [title]="'Delivery list'"
+            [deliveries]="deliveries"
+    ></app-delivery-list>
+  </div>
+
+
+  <div class="col-5">
+    <google-map></google-map>
+  </div>
+
+  <div class="col-2 flex-column d-flex">
+    <div class="btn btn-primary mb-2">
+      picked up
+    </div>
+    <div class="btn btn-warning mb-2">
+      In transit
+    </div>
+    <div class="btn btn-success mb-2">
+      Delivered
+    </div>
+    <div class="btn btn-danger mb-2">
+      Failed
+    </div>
+
+
+  </div>
+</div>

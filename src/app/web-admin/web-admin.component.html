@@ -1,0 +1,29 @@
+<div>
+  <h1>Web Admin - Home</h1>
+</div>
+<div class="row">
+  <div class="col-5">
+
+    <app-package-list
+      [title]="'Package list'"
+      [packages]="packages"
+    ></app-package-list>
+
+    <app-delivery-list
+      [title]="'Delivery list'"
+      [deliveries]="deliveries"
+    ></app-delivery-list>
+  </div>
+
+  <div class="col-2 col-2 flex-column d-flex">
+    <div class="btn btn-success mb-5">
+      Create package
+    </div>
+    <div class="btn btn-warning mb-5">
+      Create delivery
+    </div>
+
+
+
+  </div>
+</div>

@@ -1,0 +1,30 @@
+<div>
+  <h1>Web Tracker</h1>
+</div>
+
+<div class="input-group mb-3">
+  <form [formGroup]="admin_form" (ngSubmit)="onDeliverySearch()" action="">
+    <input formControlName="delivery_id" type="text" class="form-control" placeholder="Enter package Id" aria-label="Recipient's username" aria-describedby="basic-addon2">
+    <div class="input-group-append">
+      <button class="btn btn-primary" type="submit">Track</button>
+    </div>
+  </form>
+</div>
+<div class="row">
+  <div class="col-5">
+    <app-package-list
+            [title]="'Package list'"
+            [packages]="packages"
+    ></app-package-list>
+
+    <app-delivery-list
+            [title]="'Delivery list'"
+            [deliveries]="deliveries"
+    ></app-delivery-list>
+  </div>
+
+
+  <div class="col-7">
+    <google-map></google-map>
+  </div>
+</div>

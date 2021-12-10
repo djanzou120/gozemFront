@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light container">
+  <a class="navbar-brand" href="#">Web tracker app</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/web-driver">Web-driver </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/web-tracker">Web-tracker </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/web-admin">Web-admin </a>
+      </li>
+
+
+    </ul>
+    <div class="col">
+      <a class="btn btn-primary mr-5" routerLink="/admin/create/package">Create package</a>
+
+      <a class=" btn btn-primary" routerLink="/admin/create/delivery">Create delivery</a>
+    </div>
+
+
+  </div>
+
+</nav>
+
+<div class="container mx-auto my-5">
+  <router-outlet></router-outlet>
+
+</div>
